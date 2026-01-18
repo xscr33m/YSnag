@@ -1,0 +1,17 @@
+{
+  "name": "ysnag-server",
+  "version": "1.5.4",
+  "description": "YSnag Backend Server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.2.1"
+  }
+}

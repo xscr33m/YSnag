@@ -1,0 +1,109 @@
+{
+  "name": "ysnag",
+  "version": "1.5.4",
+  "description": "Download your YouTube videos locally",
+  "main": "electron/main.js",
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "dev": "npm run setup && concurrently \"npm run server\" \"npm run client\"",
+    "dev:electron": "concurrently \"npm run server\" \"npm run client\" \"wait-on http://localhost:5173 && electron .\"",
+    "server": "node server/index.js",
+    "client": "cd client && npm run dev",
+    "start": "npm run dev",
+    "build": "npm run build:client && npm run build:electron",
+    "build:client": "cd client && npm run build",
+    "build:electron": "electron-builder --publish never",
+    "build:win": "npm run setup && npm run build:client && electron-builder --win --publish never && node scripts/clean-release.js",
+    "build:linux": "npm run setup && npm run build:client && electron-builder --linux --publish never && node scripts/clean-release.js",
+    "clean:release": "node scripts/clean-release.js"
+  },
+  "keywords": [
+    "youtube",
+    "downloader",
+    "yt-dlp",
+    "electron"
+  ],
+  "author": {
+    "name": "xscr33mlabs",
+    "email": "support@xscr33mlabs.com"
+  },
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "concurrently": "^9.2.1",
+    "cors": "^2.8.5",
+    "electron-log": "^5.4.3",
+    "electron-updater": "^6.7.3",
+    "express": "^5.2.1",
+    "open-cli": "^8.0.0"
+  },
+  "devDependencies": {
+    "electron": "^40.0.0",
+    "electron-builder": "^26.0.0",
+    "wait-on": "^9.0.0"
+  },
+  "build": {
+    "appId": "com.ytdown.app",
+    "productName": "YSnag",
+    "npmRebuild": false,
+    "directories": {
+      "output": "_RELEASE",
+      "buildResources": "build"
+    },
+    "files": [
+      "electron/**/*",
+      "server/**/*",
+      "client/dist/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "client/public/Logo/ysnag-logo-original.png",
+        "to": "icon.png"
+      },
+      {
+        "from": "build/installer-scripts",
+        "to": "installer-scripts"
+      }
+    ],
+    "extraMetadata": {
+      "main": "electron/main.js"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "client/public/Logo/ysnag-logo-original.png"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "client/public/Logo/ysnag-logo-original.png",
+      "category": "Utility"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": false,
+      "createStartMenuShortcut": false,
+      "shortcutName": "YSnag",
+      "artifactName": "${productName}-${version}-Setup.${ext}",
+      "include": "build/installer.nsh",
+      "runAfterFinish": true,
+      "installerLanguages": [
+        "en-US",
+        "de-DE"
+      ],
+      "language": "1033",
+      "displayLanguageSelector": true
+    },
+    "appImage": {
+      "artifactName": "${productName}-${version}.${ext}"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "xscr33m",
+      "repo": "YSnag"
+    }
+  },
+  "overrides": {
+    "tar": "^7.5.3"
+  }
+}

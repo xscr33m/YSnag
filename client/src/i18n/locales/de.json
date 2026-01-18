@@ -1,0 +1,534 @@
+{
+  "app": {
+    "name": "YSnag"
+  },
+  "nav": {
+    "download": "Download",
+    "history": "Verlauf",
+    "settings": "Einstellungen",
+    "info": "Info",
+    "help": "Hilfe",
+    "about": "Über"
+  },
+  "hero": {
+    "title": "YSnag | Youtube Downloader",
+    "subtitle": "Füge einen YouTube-Link ein, um Videos oder Audio in deiner bevorzugten Qualität herunterzuladen."
+  },
+  "features": {
+    "quickPaste": {
+      "title": "Schnell einfügen",
+      "description": "Drücke Strg+V irgendwo"
+    },
+    "playlists": {
+      "title": "Playlists",
+      "description": "Ganze Playlists herunterladen"
+    },
+    "audioOnly": {
+      "title": "Nur Audio",
+      "description": "Audio als MP3 extrahieren"
+    }
+  },
+  "input": {
+    "placeholder": "https://www.youtube.com/watch?v=...",
+    "placeholderCompact": "Weitere URL hinzufügen...",
+    "addToQueue": "Zur Warteschlange",
+    "add": "Hinzufügen",
+    "fetchingInfo": "Lade Video-Informationen... Du kannst weitere URLs hinzufügen."
+  },
+  "queue": {
+    "title": "Download-Warteschlange",
+    "downloading": "wird heruntergeladen",
+    "queued": "in Warteschlange",
+    "ready": "bereit",
+    "done": "fertig",
+    "fetching": "wird abgerufen",
+    "downloadAll": "Alle herunterladen",
+    "clearCompleted": "Fertige löschen",
+    "allAudio": "Alle Audio",
+    "allVideo": "Alle Video",
+    "setAllAudio": "Alle auf Audio setzen",
+    "setAllVideo": "Alle auf Video setzen",
+    "cancelFetching": "Abruf abbrechen",
+    "cancelDownloads": "Downloads abbrechen",
+    "selectAll": "Alle auswählen",
+    "deselectAll": "Auswahl aufheben",
+    "selected": "ausgewählt",
+    "downloadSelected": "Download",
+    "removeSelected": "Entfernen",
+    "status": {
+      "queued": "Wartend",
+      "cancelled": "Abgebrochen",
+      "error": "Fehler",
+      "complete": "Fertig"
+    },
+    "retry": "Wiederholen",
+    "openFolder": "Ordner öffnen",
+    "download": "Download",
+    "cancel": "Abbrechen",
+    "remove": "Entfernen",
+    "audioOnly": "Nur Audio (MP3)",
+    "format": "Format",
+    "cancelDownload": "Download abbrechen",
+    "fetchingInfo": "Lade Video-Informationen...",
+    "fetchFailed": "Fehler beim Laden der Video-Informationen",
+    "video": "Video",
+    "bestQuality": "Beste Qualität"
+  },
+  "history": {
+    "title": "Download-Verlauf",
+    "empty": {
+      "title": "Noch keine Downloads",
+      "description": "Deine heruntergeladenen Videos erscheinen hier"
+    },
+    "clearHistory": "Verlauf löschen",
+    "clearConfirm": "Bist du sicher, dass du den Download-Verlauf löschen möchtest?",
+    "audio": "Audio",
+    "video": "Video"
+  },
+  "folderPicker": {
+    "title": "Ordner auswählen",
+    "subtitle": "Wähle, wo deine Downloads gespeichert werden",
+    "currentPath": "Aktueller Speicherort",
+    "parentFolder": "Übergeordneter Ordner",
+    "noSubfolders": "Keine Unterordner gefunden",
+    "selectFolder": "Ordner auswählen",
+    "newFolder": "Neuen Ordner erstellen",
+    "folderNamePlaceholder": "Name des neuen Ordners...",
+    "create": "Erstellen",
+    "createError": "Ordner konnte nicht erstellt werden",
+    "folderExists": "Ordner existiert bereits"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "subtitle": "Konfiguriere deine Download-Einstellungen",
+    "downloadPath": {
+      "label": "Download-Speicherort",
+      "description": "Wähle, wo die Dateien gespeichert werden sollen",
+      "browse": "Durchsuchen",
+      "openFolder": "Ordner öffnen"
+    },
+    "browser": {
+      "label": "Browser für Cookies",
+      "description": "Wähle deinen Browser für die Authentifizierung",
+      "windowsWarning": {
+        "title": "Nicht unterstützt unter Windows!",
+        "description": "Chrome, Chromium und Brave werden unter Windows NICHT unterstützt wegen Cookie-Verschlüsselung. Bitte verwende stattdessen Firefox. Dies ist eine bekannte yt-dlp-Einschränkung."
+      },
+      "windowsEdgeWarning": {
+        "title": "Edge unter Windows",
+        "description": "Edge muss vollständig geschlossen sein, damit der Cookie-Zugriff funktioniert. Firefox wird empfohlen, da er auch geöffnet funktioniert."
+      },
+      "cookieStatus": {
+        "checking": "Prüfe Browser-Cookies...",
+        "checkingDescription": "Überprüfe Cookie-Zugriff für diesen Browser.",
+        "found": "Browser-Cookies zugänglich",
+        "foundDescription": "Du kannst altersbeschränkte und Mitglieder-Videos herunterladen.",
+        "error": "Cookie-Zugriff fehlgeschlagen",
+        "notLoggedIn": "Cookies konnten nicht verifiziert werden",
+        "notLoggedInDescription": "Melde dich in diesem Browser bei YouTube an, um altersbeschränkte Inhalte herunterzuladen und die Anti-Bot-Challenge von YouTube zu umgehen.",
+        "recheck": "Cookie-Status erneut prüfen"
+      },
+      "autoDetected": "Browser automatisch erkannt"
+    },
+    "language": {
+      "label": "Sprache",
+      "description": "Wähle deine bevorzugte Sprache"
+    },
+    "videoFormat": {
+      "label": "Videoformat",
+      "description": "Wähle das Ausgabeformat für heruntergeladene Videos"
+    },
+    "reset": {
+      "label": "Einstellungen zurücksetzen",
+      "description": "Alle lokal gespeicherten Einstellungen löschen und auf Standard zurücksetzen",
+      "button": "Alles zurücksetzen",
+      "confirmMessage": "Bist du sicher, dass du alle Einstellungen auf die Standardwerte zurücksetzen möchtest? Diese Aktion kann nicht rückgängig gemacht werden."
+    },
+    "updates": {
+      "label": "Updates",
+      "description": "Anwendungsupdates verwalten",
+      "autoCheck": "Automatische Update-Prüfung",
+      "autoCheckDescription": "Beim Starten der App nach Updates suchen",
+      "checkNow": "Nach Updates suchen",
+      "checking": "Suche nach Updates..."
+    },
+    "about": {
+      "title": "Über YSnag",
+      "version": "Version 1.0.0",
+      "description": "YSnag ist ein lokaler YouTube-Video-Downloader, entwickelt mit React und yt-dlp. Du kannst Videos und Audio in verschiedenen Formaten und Qualitätsstufen herunterladen.",
+      "poweredBy": "Powered by yt-dlp"
+    }
+  },
+  "status": {
+    "title": "Systemstatus",
+    "checking": "Prüfe...",
+    "allOperational": "Alle Systeme funktionieren",
+    "issuesDetected": "Systemprobleme erkannt",
+    "hintChecking": "Prüfe System...",
+    "hintReady": "System bereit",
+    "hintIssues": "Klicken für Details",
+    "backendServer": "Backend-Server",
+    "serverOnline": "Server Online",
+    "serverOffline": "Server Offline",
+    "ytdlpReady": "yt-dlp bereit",
+    "ytdlpNotFound": "yt-dlp nicht gefunden",
+    "ffmpegReady": "ffmpeg bereit",
+    "ffmpegNotFound": "ffmpeg nicht gefunden",
+    "nodeReady": "Node.js bereit",
+    "nodeNotFound": "Node.js nicht gefunden",
+    "serverOfflineHelp": "Der Backend-Server antwortet nicht. Versuche die App neu zu starten.",
+    "ytdlpNotInstalledHelp": "yt-dlp ist nicht installiert. Installiere es mit deinem Paketmanager:",
+    "ffmpegNotInstalledHelp": "ffmpeg ist nicht installiert (benötigt für Video/Audio-Zusammenführung). Installiere es mit deinem Paketmanager:",
+    "nodeNotInstalledHelp": "Node.js ist nicht installiert (benötigt für YouTube-Extraktion). Installiere es mit deinem Paketmanager:",
+    "refreshStatus": "Status aktualisieren"
+  },
+  "errors": {
+    "invalidUrl": "Bitte gib eine gültige YouTube-URL ein",
+    "fetchFailed": "Fehler beim Laden der Video-Informationen",
+    "downloadFailed": "Download fehlgeschlagen",
+    "drmProtected": "Dieses Video ist DRM-geschützt und kann nicht heruntergeladen werden. YouTube Movies und einige Premium-Inhalte verwenden Verschlüsselung, die das Herunterladen verhindert.",
+    "loginRequired": "YouTube-Anmeldung erforderlich",
+    "loginRequiredMessage": "YouTube erfordert eine Anmeldung, um auf dieses Video zugreifen zu können. Bitte melde dich in deinem ausgewählten Browser bei YouTube an und versuche es erneut.",
+    "openYouTube": "YouTube öffnen zum Anmelden"
+  },
+  "toast": {
+    "downloadComplete": "Download abgeschlossen",
+    "downloadFailed": "Download fehlgeschlagen",
+    "downloadStarted": "Download gestartet",
+    "addedToQueue": "Zur Warteschlange hinzugefügt",
+    "serverOffline": "Server offline",
+    "serverOnline": "Server wieder online",
+    "playlistAdded": "Playlist hinzugefügt",
+    "playlistAddedMessage": "{{count}} Videos zur Warteschlange hinzugefügt",
+    "historyCleared": "Verlauf gelöscht",
+    "downloadsCancelled": "Downloads abgebrochen",
+    "downloadsCancelledMessage": "{{count}} Downloads abgebrochen"
+  },
+  "shortcuts": {
+    "title": "Tastaturkürzel",
+    "subtitle": "Schnellaktionen für Power-User",
+    "paste": "URL aus Zwischenablage einfügen",
+    "submit": "URL zur Warteschlange hinzufügen",
+    "close": "Dialog / Popup schließen",
+    "showShortcuts": "Diesen Dialog anzeigen",
+    "hint": "Drücke ? irgendwo um diesen Dialog zu öffnen"
+  },
+  "legal": {
+    "title": "Rechtliche Informationen",
+    "hint": "Rechtliches",
+    "aria": {
+      "openLegal": "Rechtliche Informationen öffnen"
+    },
+    "footer": {
+      "lastUpdated": "Zuletzt aktualisiert"
+    },
+    "tabs": {
+      "disclaimer": "Disclaimer",
+      "privacy": "Datenschutz",
+      "terms": "AGB"
+    },
+    "disclaimer": {
+      "developer": "Entwickler",
+      "contact": "Kontakt",
+      "liability": "Haftungsbeschränkung",
+      "liabilityText": "DIE SOFTWARE WIRD OHNE MÄNGELGEWÄHR UND OHNE JEGLICHE AUSDRÜCKLICHE ODER STILLSCHWEIGENDE GEWÄHRLEISTUNG BEREITGESTELLT. IN KEINEM FALL HAFTET DER ENTWICKLER FÜR ANSPRÜCHE, SCHÄDEN ODER ANDERE VERBINDLICHKEITEN, DIE AUS DER NUTZUNG DIESER SOFTWARE ENTSTEHEN.",
+      "noWarranty": "Keine Garantie",
+      "noWarrantyText": "Diese Software wird ohne jegliche Garantie vertrieben. Der Entwickler gibt keine Zusicherungen hinsichtlich Funktionalität, Zuverlässigkeit oder Eignung für einen bestimmten Zweck. Die Nutzung erfolgt auf eigene Gefahr.",
+      "userResponsibility": "Nutzerverantwortung",
+      "userResponsibilityText": "Nutzer sind allein verantwortlich für die Art und Weise, wie sie diese Software verwenden, und dafür, dass ihre Nutzung allen geltenden Gesetzen in ihrem Rechtsraum entspricht. Der Entwickler übernimmt keine Verantwortung für Handlungen der Nutzer dieser Software."
+    },
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "intro": "YSnag wurde mit Datenschutz als Kernprinzip entwickelt. Diese Anwendung läuft vollständig auf deinem lokalen Gerät und sammelt, überträgt oder speichert keine persönlichen Daten auf externen Servern.",
+      "dataCollection": "Datenerfassung",
+      "dataCollectionText": "YSnag erfasst keine persönlichen Daten. Die Anwendung arbeitet vollständig offline (außer beim Abrufen von Video-Informationen von YouTube) und verarbeitet alle Daten lokal auf deinem Gerät.",
+      "noTracking": "Keine Analyse, Telemetrie oder Tracking jeglicher Art",
+      "localStorage": "Alle Einstellungen und der Verlauf werden nur lokal auf deinem Gerät gespeichert",
+      "noThirdParty": "Keine Daten werden an Dritte weitergegeben oder verkauft",
+      "noServerStorage": "Keine Daten werden an unsere oder andere Server übertragen oder dort gespeichert",
+      "localProcessing": "Lokale Datenverarbeitung",
+      "localProcessingText": "Alle Video-Downloads und die Verarbeitung finden lokal auf deinem Computer statt. Heruntergeladene Dateien werden an einem von dir festgelegten Ort gespeichert. Dein Download-Verlauf wird lokal gespeichert und kann jederzeit über die App-Einstellungen gelöscht werden.",
+      "cookies": "Cookies & Browser-Daten",
+      "cookiesText": "YSnag kann optional auf die YouTube-Cookies deines Browsers zugreifen, um altersbeschränkte oder Mitglieder-Inhalte herunterzuladen. Diese Funktion ist vollständig optional und die Cookie-Daten werden nur lokal von yt-dlp zur Authentifizierung bei YouTube verwendet. Keine Cookie-Daten werden anderweitig übertragen.",
+      "thirdPartyServices": "Drittanbieter-Dienste",
+      "thirdPartyServicesText": "YSnag kommuniziert mit YouTube, um Video-Metadaten abzurufen und Inhalte herunterzuladen. Diese Interaktion unterliegt den Nutzungsbedingungen und der Datenschutzrichtlinie von YouTube. Wir haben keine Kontrolle über YouTubes Datenpraktiken. Die Anwendung verwendet auch yt-dlp, ein Open-Source-Tool, für den eigentlichen Download-Prozess.",
+      "yourRights": "Deine Rechte",
+      "yourRightsText": "Da alle Daten lokal auf deinem Gerät gespeichert werden, hast du die vollständige Kontrolle darüber. Du kannst deine Einstellungsdatei und den Download-Verlauf jederzeit löschen. Das Deinstallieren der Anwendung entfernt alle zugehörigen Daten von deinem System."
+    },
+    "terms": {
+      "title": "Nutzungsbedingungen",
+      "intro": "Durch das Herunterladen, Installieren oder Verwenden von YSnag bestätigst du, dass du diese Nutzungsbedingungen gelesen, verstanden hast und dich an sie gebunden fühlst. Wenn du diesen Bedingungen nicht zustimmst, verwende diese Software nicht.",
+      "scope": "Leistungsumfang",
+      "scopeText": "YSnag ist eine lokale Desktop-Anwendung, die eine Benutzeroberfläche für das Kommandozeilen-Tool yt-dlp bereitstellt. Die Anwendung wird wie besehen für den persönlichen, nicht-kommerziellen Gebrauch bereitgestellt. Der Entwickler stellt nur das Software-Tool zur Verfügung und bietet, hostet oder verbreitet keine Video-Inhalte.",
+      "usage": "Zulässige Nutzung",
+      "usageIntro": "Du stimmst zu, YSnag nur für rechtmäßige Zwecke und in Übereinstimmung mit diesen Bedingungen zu nutzen:",
+      "personalUse": "Downloads ausschließlich für persönliche, private, nicht-kommerzielle Zwecke nutzen",
+      "copyrightRespect": "Urheberrechtsgesetze und geistige Eigentumsrechte der Content-Ersteller respektieren",
+      "noCommercial": "Heruntergeladene Inhalte nicht weiterverbreiten, verkaufen oder kommerziell nutzen",
+      "legalCompliance": "Alle geltenden lokalen, nationalen und internationalen Gesetze einhalten",
+      "userResponsibility": "Nutzerverantwortung",
+      "userResponsibilityText": "Du bist allein dafür verantwortlich sicherzustellen, dass deine Nutzung von YSnag den YouTube-Nutzungsbedingungen, geltenden Urheberrechtsgesetzen und allen anderen relevanten Vorschriften in deiner Gerichtsbarkeit entspricht. Der Entwickler überwacht, kontrolliert oder übernimmt keine Verantwortung dafür, wie du diese Software nutzt oder welche Inhalte du herunterlädst.",
+      "disclaimer": "Gewährleistungsausschluss",
+      "disclaimerText": "YSNAG WIRD \"WIE BESEHEN\" UND \"WIE VERFÜGBAR\" OHNE JEGLICHE AUSDRÜCKLICHE ODER STILLSCHWEIGENDE GEWÄHRLEISTUNG BEREITGESTELLT. DER ENTWICKLER SCHLIESST AUSDRÜCKLICH ALLE GEWÄHRLEISTUNGEN AUS, EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF STILLSCHWEIGENDE GEWÄHRLEISTUNGEN DER MARKTGÄNGIGKEIT, EIGNUNG FÜR EINEN BESTIMMTEN ZWECK UND NICHTVERLETZUNG. DER ENTWICKLER GEWÄHRLEISTET NICHT, DASS DIE SOFTWARE UNUNTERBROCHEN, FEHLERFREI ODER FREI VON VIREN ODER ANDEREN SCHÄDLICHEN KOMPONENTEN SEIN WIRD.",
+      "liability": "Haftungsbeschränkung",
+      "liabilityText": "SOWEIT GESETZLICH ZULÄSSIG, HAFTET DER ENTWICKLER NICHT FÜR INDIREKTE, ZUFÄLLIGE, BESONDERE, FOLGE- ODER STRAFSCHÄDEN, EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF GEWINN-, DATEN- ODER NUTZUNGSVERLUST, DIE SICH AUS ODER IN VERBINDUNG MIT DEINER NUTZUNG VON YSNAG ERGEBEN. DER ENTWICKLER IST NICHT VERANTWORTLICH FÜR URHEBERRECHTSVERLETZUNGEN, RECHTLICHE ANSPRÜCHE ODER SCHÄDEN, DIE SICH AUS DEINER NUTZUNG ODER DEINEM MISSBRAUCH DIESER SOFTWARE ERGEBEN. DU NUTZT DIESE SOFTWARE VOLLSTÄNDIG AUF EIGENE GEFAHR.",
+      "intellectualProperty": "Geistiges Eigentum",
+      "intellectualPropertyText": "YSnag ist Open-Source-Software. Die Software selbst ist geistiges Eigentum von xscr33mLabs und steht unter der MIT-Lizenz. Heruntergeladene Inhalte bleiben geistiges Eigentum ihrer jeweiligen Rechteinhaber. Diese Software gewährt dir keine Rechte an den Inhalten, die du herunterlädst.",
+      "termination": "Beendigung",
+      "terminationText": "Diese Bedingungen gelten bis zur Beendigung. Deine Rechte unter diesen Bedingungen enden automatisch ohne Vorankündigung, wenn du gegen eine ihrer Bestimmungen verstößt. Bei Beendigung musst du die Nutzung von YSnag einstellen und alle Kopien in deinem Besitz vernichten.",
+      "governingLaw": "Anwendbares Recht",
+      "governingLawText": "Diese Bedingungen unterliegen dem Recht der Bundesrepublik Deutschland und werden in Übereinstimmung damit ausgelegt, ohne Berücksichtigung von Kollisionsnormen. Alle Streitigkeiten, die sich aus diesen Bedingungen oder deiner Nutzung von YSnag ergeben, unterliegen der ausschließlichen Gerichtsbarkeit der Gerichte in Deutschland."
+    }
+  },
+  "common": {
+    "views": "Aufrufe",
+    "loading": "Lädt...",
+    "cancel": "Abbrechen",
+    "close": "Schließen",
+    "confirm": "Bestätigen",
+    "aria": {
+      "youtubeUrl": "YouTube-URL",
+      "formatType": "Format-Typ",
+      "videoQuality": "Videoqualität",
+      "downloadFormat": "Download-Format",
+      "systemStatus": "Systemstatus",
+      "removeFromQueue": "Aus Warteschlange entfernen",
+      "select": "Element auswählen",
+      "deselect": "Auswahl aufheben"
+    }
+  },
+  "confirm": {
+    "clearHistory": {
+      "title": "Download-Verlauf löschen",
+      "message": "Bist du sicher, dass du deinen gesamten Download-Verlauf löschen möchtest? Diese Aktion kann nicht rückgängig gemacht werden.",
+      "confirm": "Verlauf löschen"
+    },
+    "resetSettings": {
+      "title": "Alle Einstellungen zurücksetzen",
+      "message": "Bist du sicher, dass du alle Einstellungen auf die Standardwerte zurücksetzen möchtest? Dies löscht deine Einstellungen und lädt die Anwendung neu.",
+      "confirm": "Einstellungen zurücksetzen"
+    }
+  },
+  "info": {
+    "title": "Hilfe & Informationen",
+    "subtitle": "Alles was du über YSnag wissen musst",
+    "howItWorks": {
+      "title": "So funktioniert's",
+      "steps": {
+        "copy": {
+          "title": "URL kopieren",
+          "description": "Kopiere eine YouTube Video- oder Playlist-URL aus deinem Browser"
+        },
+        "paste": {
+          "title": "Link einfügen",
+          "description": "Füge die URL in das Eingabefeld von YSnag ein"
+        },
+        "configure": {
+          "title": "Format wählen",
+          "description": "Wähle deine bevorzugte Videoqualität oder Audioformat"
+        },
+        "download": {
+          "title": "Herunterladen",
+          "description": "Klicke auf Download und finde deine Datei im gewählten Ordner"
+        }
+      }
+    },
+    "features": {
+      "title": "Funktionen",
+      "quality": {
+        "title": "Mehrere Qualitäten",
+        "description": "Lade Videos in jeder verfügbaren Qualität von 360p bis 4K und höher herunter"
+      },
+      "audio": {
+        "title": "Audio-Extraktion",
+        "description": "Extrahiere Audio als hochwertige MP3-Dateien für Musik und Podcasts"
+      },
+      "playlists": {
+        "title": "Playlist-Unterstützung",
+        "description": "Lade ganze Playlists auf einmal mit Stapelverarbeitung herunter"
+      },
+      "organize": {
+        "title": "Eigener Speicherort",
+        "description": "Wähle wo deine Downloads gespeichert werden sollen"
+      },
+      "cookies": {
+        "title": "Browser-Cookies",
+        "description": "Nutze Browser-Cookies um altersbeschränkte und Mitglieder-Inhalte herunterzuladen"
+      },
+      "shortcuts": {
+        "title": "Tastenkürzel",
+        "description": "Nutze Strg+V überall um schnell YouTube-URLs einzufügen"
+      }
+    },
+    "requirements": {
+      "title": "Systemanforderungen",
+      "description": "YSnag benötigt folgende Tools auf deinem System:",
+      "ytdlp": "Download-Engine - Lädt Videos herunter und wählt Formate",
+      "ffmpeg": "Media-Prozessor - Ermöglicht Formatkonvertierung und Audio-Extraktion",
+      "nodejs": "JavaScript-Laufzeit - Ermöglicht die Ausführung des Backend-Servers",
+      "internet": "Internetverbindung - Zum Abrufen von Video-Informationen und Herunterladen von Inhalten von YouTube"
+    },
+    "shortcuts": {
+      "title": "Tastenkürzel",
+      "paste": "URL aus Zwischenablage einfügen",
+      "submit": "URL zur Warteschlange hinzufügen",
+      "closePopup": "Popup/Dialog schließen",
+      "showHelp": "Tastenkürzel anzeigen"
+    },
+    "tips": {
+      "title": "Schnelltipps",
+      "items": {
+        "ctrlV": "Drücke Strg+V irgendwo um sofort eine YouTube-URL einzufügen",
+        "dragDrop": "Füge mehrere URLs auf einmal hinzu - sie werden automatisch eingereiht",
+        "queue": "Nutze 'Alle herunterladen' um die gesamte Warteschlange zu verarbeiten",
+        "audioOnly": "Aktiviere 'Nur Audio' um nur die Tonspur als MP3 zu extrahieren"
+      }
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "items": {
+        "formats": {
+          "question": "Welche Videoformate werden unterstützt?",
+          "answer": "YSnag unterstützt MP4, MKV und WebM Formate. MP4 wird für beste Kompatibilität mit den meisten Geräten empfohlen. Du kannst das Standardformat in den Einstellungen ändern."
+        },
+        "ageRestricted": {
+          "question": "Wie lade ich altersbeschränkte Videos herunter?",
+          "answer": "Um altersbeschränkte Inhalte herunterzuladen:\n1. Melde dich bei YouTube in deinem Browser an\n2. Wähle deinen Browser unter Einstellungen > Browser für Cookies\n3. YSnag nutzt deine Anmeldung um auf beschränkte Inhalte zuzugreifen"
+        },
+        "playlists": {
+          "question": "Kann ich ganze Playlists herunterladen?",
+          "answer": "Ja! Füge einfach eine Playlist-URL ein und YSnag lädt alle Videos. Du kannst sie dann einzeln oder alle auf einmal mit 'Alle herunterladen' downloaden."
+        },
+        "quality": {
+          "question": "Warum kann ich keine 4K-Qualität auswählen?",
+          "answer": "4K-Qualität hängt davon ab was YouTube für jedes Video anbietet. Manche Videos sind nur in niedrigeren Auflösungen verfügbar. Die Qualitätsauswahl zeigt alle verfügbaren Optionen."
+        },
+        "speed": {
+          "question": "Warum ist mein Download langsam?",
+          "answer": "Die Downloadgeschwindigkeit hängt von deiner Internetverbindung und YouTubes Servern ab. YSnag lädt so schnell wie möglich, aber sehr große Dateien (4K, lange Videos) dauern naturgemäß länger."
+        },
+        "storage": {
+          "question": "Wo werden meine Downloads gespeichert?",
+          "answer": "Standardmäßig werden Downloads in deinem Downloads-Ordner gespeichert. Du kannst den Speicherort unter Einstellungen > Download-Speicherort ändern."
+        },
+        "cookies": {
+          "question": "Wofür werden Browser-Cookies verwendet?",
+          "answer": "Browser-Cookies ermöglichen YSnag deine YouTube-Anmeldung zu nutzen. Das wird benötigt für:\n• Altersbeschränkte Videos\n• Mitglieder-Inhalte\n• Videos die ohne Anmeldung nicht verfügbar sind\n\nDeine Cookies werden nur lokal verwendet und niemals versendet."
+        },
+        "private": {
+          "question": "Sind meine Daten privat?",
+          "answer": "Absolut. YSnag läuft zu 100% lokal auf deinem Computer. Es werden keine Daten an externe Server gesendet, keine Konten benötigt, und dein Download-Verlauf bleibt nur auf deinem Gerät."
+        }
+      }
+    },
+    "privacy": {
+      "title": "Datenschutz & Sicherheit",
+      "local": {
+        "title": "Läuft lokal",
+        "description": "Alles läuft auf deinem Computer. Keine externen Server, keine Cloud-Verarbeitung."
+      },
+      "noTracking": {
+        "title": "Kein Tracking",
+        "description": "Keine Analysen, keine Telemetrie, keine Datensammlung. Deine Nutzung ist komplett privat."
+      },
+      "cookies": {
+        "title": "Cookie-Sicherheit",
+        "description": "Browser-Cookies werden lokal gelesen und nur zur Authentifizierung bei YouTube verwendet. Sie werden niemals gespeichert oder übertragen."
+      }
+    },
+    "badges": {
+      "privacy": "100% Privat",
+      "local": "Läuft lokal",
+      "noCloud": "Keine Cloud-Speicherung"
+    }
+  },
+  "about": {
+    "subtitle": "Der ultimative YouTube-Downloader",
+    "highlights": {
+      "powerful": "Leistungsstark",
+      "fast": "Blitzschnell",
+      "private": "100% Privat"
+    },
+    "features": {
+      "title": "Funktionen",
+      "quality": {
+        "title": "Mehrere Qualitäten",
+        "description": "Lade Videos in jeder verfügbaren Qualität von 360p bis 4K und höher herunter"
+      },
+      "audio": {
+        "title": "Audio-Extraktion",
+        "description": "Extrahiere Audio als hochwertige MP3-Dateien für Musik und Podcasts"
+      },
+      "playlists": {
+        "title": "Playlist-Unterstützung",
+        "description": "Lade ganze Playlists auf einmal mit Stapelverarbeitung herunter"
+      },
+      "organize": {
+        "title": "Eigener Speicherort",
+        "description": "Wähle wo deine Downloads gespeichert werden sollen"
+      },
+      "cookies": {
+        "title": "Browser-Cookies",
+        "description": "Nutze Browser-Cookies um altersbeschränkte Inhalte herunterzuladen"
+      }
+    },
+    "requirements": {
+      "title": "Systemanforderungen",
+      "description": "YSnag benötigt folgende Tools auf deinem System:",
+      "ytdlp": "Download-Engine - Lädt Videos herunter und wählt Formate",
+      "ffmpeg": "Media-Prozessor - Ermöglicht Formatkonvertierung und Audio-Extraktion",
+      "nodejs": "JavaScript-Laufzeit - Ermöglicht die Ausführung des Backend-Servers",
+      "internet": "Internetverbindung - Erforderlich für den Zugriff auf YouTube"
+    },
+    "privacy": {
+      "title": "Datenschutz & Sicherheit",
+      "local": {
+        "title": "Läuft lokal",
+        "description": "Alles läuft auf deinem Computer. Keine externen Server, keine Cloud-Verarbeitung."
+      },
+      "noTracking": {
+        "title": "Kein Tracking",
+        "description": "Keine Analysen, keine Telemetrie, keine Datensammlung. Deine Nutzung ist komplett privat."
+      },
+      "cookies": {
+        "title": "Cookie-Sicherheit",
+        "description": "Browser-Cookies werden lokal gelesen und nur zur Authentifizierung bei YouTube verwendet."
+      }
+    },
+    "techInfo": {
+      "title": "Technische Informationen",
+      "version": "Version",
+      "platform": "Plattform"
+    },
+    "badges": {
+      "privacy": "100% Privat",
+      "local": "Läuft lokal",
+      "noCloud": "Keine Cloud-Speicherung"
+    },
+    "support": {
+      "title": "YSnag unterstützen",
+      "description": "Wenn dir YSnag gefällt, kannst du mir einen Kaffee spendieren! Deine Unterstützung hilft dabei, dieses Projekt kostenlos und aktiv zu halten.",
+      "button": "Kaffee spendieren",
+      "note": "Spenden sind komplett freiwillig und immer willkommen ❤️"
+    },
+    "madeWith": "Erstellt mit"
+  },
+  "updater": {
+    "available": {
+      "title": "Update verfügbar",
+      "message": "Eine neue Version ({{version}}) ist verfügbar. Möchten Sie sie jetzt herunterladen?",
+      "yes": "Ja",
+      "no": "Nein"
+    },
+    "downloaded": {
+      "title": "Update bereit",
+      "message": "Version {{version}} wurde heruntergeladen. Möchten Sie die App jetzt neu starten, um das Update zu installieren?",
+      "restart": "Jetzt neu starten",
+      "later": "Später"
+    },
+    "checking": "Suche nach Updates...",
+    "noUpdate": "Sie verwenden die neueste Version.",
+    "downloading": "Update wird heruntergeladen: {{percent}}%",
+    "error": "Update-Fehler: {{message}}"
+  }
+}

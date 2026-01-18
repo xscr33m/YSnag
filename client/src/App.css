@@ -1,0 +1,89 @@
+/* App styles - Tailwind handles most styling */
+
+/* Tab content fade-in animation */
+@keyframes tabFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tab-content-enter {
+  animation: tabFadeIn 300ms cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+/* Staggered animation for child elements */
+.tab-content-enter > * {
+  opacity: 0;
+  animation: tabFadeIn 350ms cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+.tab-content-enter > *:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.tab-content-enter > *:nth-child(2) {
+  animation-delay: 50ms;
+}
+
+.tab-content-enter > *:nth-child(3) {
+  animation-delay: 100ms;
+}
+
+.tab-content-enter > *:nth-child(4) {
+  animation-delay: 150ms;
+}
+
+.tab-content-enter > *:nth-child(5) {
+  animation-delay: 200ms;
+}
+
+.tab-content-enter > *:nth-child(n + 6) {
+  animation-delay: 250ms;
+}
+
+/* Toast progress bar animation */
+@keyframes shrink-width {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+/* Skeleton loading animation */
+@keyframes skeleton-pulse {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.skeleton {
+  animation: skeleton-pulse 1.5s ease-in-out infinite;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.5s ease-in-out infinite;
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
