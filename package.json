@@ -1,6 +1,6 @@
 {
   "name": "ysnag",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "Download your YouTube videos locally",
   "main": "electron/main.js",
   "scripts": {
