@@ -35,7 +35,7 @@
     "electron-log": "^5.4.3",
     "electron-updater": "^6.7.3",
     "express": "^5.2.1",
-    "open-cli": "^8.0.0"
+    "open-cli": "^9.0.0"
   },
   "devDependencies": {
     "electron": "^40.8.5",
